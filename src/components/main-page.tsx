@@ -45,7 +45,13 @@ const CompanyCard: React.FC<Company> = ({ name, logo, website }) => (
   </div>
 );
 
-const BigCompagnyCard = ({ children, title }: any) => {
+const BigCompagnyCard = ({
+  children,
+  title,
+}: {
+  children: React.ReactElement<string, string>;
+  title: string;
+}) => {
   return (
     <div className="flex-1 min-w-[350px] flex flex-col gap-10">
       <div className="flex-1 bg-gray-800 text-white text-center py-2 px-4 mx-1">
