@@ -83,7 +83,7 @@ const CompanyList: React.FC = () => {
               category: "SPECIALIZED SECURITY",
               name: "PARADIGMA",
               logo: paradigma,
-              website: "paradigma.com",
+              website: "para-digma.com/index-mobile.html",
               description: "Limited",
             }}
           />
