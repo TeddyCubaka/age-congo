@@ -20,6 +20,7 @@ const CompanyCard: React.FC<Company> = ({ name, logo, website }) => (
     <Link
       href={`https://${website}`}
       className="w-full h-40 max-md:h-32 bg-gray-100 flex justify-center items-center rounded-xl py-5 relative group-hover:bg-app-blue-70 transition-bg duration-300"
+      target="_blank"
     >
       <Image
         src={logo}
@@ -83,7 +84,7 @@ const CompanyList: React.FC = () => {
               category: "SPECIALIZED SECURITY",
               name: "PARADIGMA",
               logo: paradigma,
-              website: "para-digma.com/index-mobile.html",
+              website: "para-digma.com",
               description: "Limited",
             }}
           />
@@ -94,11 +95,10 @@ const CompanyList: React.FC = () => {
               category: "BIOMETRICS",
               name: "SYCAMORE",
               logo: sycamore,
-              website: "biosyc.com",
+              website: "sycamore.cd",
             }}
           />
         </BigCompagnyCard>
-
         <BigCompagnyCard title="FINTECH">
           <CompanyCard
             {...{
