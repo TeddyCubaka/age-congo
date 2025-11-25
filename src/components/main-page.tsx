@@ -3,6 +3,7 @@ import zibo from "@/public/assets/zibo.png";
 import paradigma from "@/public/assets/paradigma.png";
 import easypay from "@/public/assets/easypay.png";
 import sycamore from "@/public/assets/sycamore.png";
+import kannea from "@/public/assets/kannea.png";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { IoMdOpen } from "react-icons/io";
@@ -54,7 +55,7 @@ const BigCompagnyCard = ({
   title: string;
 }) => {
   return (
-    <div className="flex-1 min-w-[350px] flex flex-col gap-10">
+    <div className=" min-w-[450px] lg:w-[300px] md:w-full w-fit flex flex-col gap-10">
       <div className="flex-1 bg-gray-800 text-white text-center py-2 px-4 mx-1">
         <h2 className="text-lg font-bold">{title}</h2>
       </div>
@@ -66,7 +67,7 @@ const BigCompagnyCard = ({
 const CompanyList: React.FC = () => {
   return (
     <div className="w-full h-full">
-      <div className="flex flex-wrap max-md:grid-cols-1 gap-10">
+      <div className="flex flex-wrap gap-10 justify-center">
         <BigCompagnyCard title="MINING">
           <CompanyCard
             {...{
@@ -107,6 +108,17 @@ const CompanyList: React.FC = () => {
               logo: easypay,
               website: "easypay.co.ug",
               description: "Mobile Money Wallet",
+            }}
+          />
+        </BigCompagnyCard>
+        <BigCompagnyCard title="AUTO FINANCE">
+          <CompanyCard
+            {...{
+              category: "AUTO FINANCE",
+              name: "Kane Acceptance LLC",
+              logo: kannea,
+              website: "kaneacceptance.com",
+              description: 'Empowering Dealers to Say "Yes"',
             }}
           />
         </BigCompagnyCard>
