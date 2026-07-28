@@ -37,7 +37,7 @@ export default function Home() {
           alt="age-congo-logos"
           src={AgeCongoLogo}
           height={150}
-          className="w-auto"
+          className="w-auto py-10 md:py-16"
         />
         <CompanyList />
       </div>
