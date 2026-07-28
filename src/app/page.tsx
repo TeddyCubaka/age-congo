@@ -1,7 +1,7 @@
 import CompanyList from "@/components/main-page";
 import bg from "@/public/assets/new-york-city.jpg";
 import Image from "next/image";
-import AgeCongoLogo from "@/public/assets/logos/age_congo_bg_less.png";
+import AgeCongoLogo from "@/public/assets/age_congo_bg_less.png";
 
 export default function Home() {
   return (
