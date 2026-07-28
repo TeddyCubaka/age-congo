@@ -36,7 +36,7 @@ export default function Home() {
         <Image
           alt="age-congo-logos"
           src={AgeCongoLogo}
-          height={300}
+          height={150}
           className="w-auto"
         />
         <CompanyList />
